@@ -9,6 +9,7 @@ var server = restify.createServer({
 //restify.queryParser() 插件是用来解析HTTP查询字符串（如 /jobs?skills=java,mysql），解析后的内容将会在req.query里可用。
 //restify.bodyParser() 会在服务器上自动将请求数据转换为JavaScript对象。
 //restify.CORS() 配置应用程序中的CORS支持
+server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
 server.use(restify.bodyParser());
 server.use(restify.CORS());

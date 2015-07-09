@@ -22,8 +22,6 @@ var  user={
                 }
                 else
                 {
-                    console.log(rows);
-                    console.log(fields);
                     res.send(rows);
                 }
                 conn.release();
@@ -47,7 +45,11 @@ var  user={
         });
     },
     //添加用户
-    "AddUser":function(req, res , next){ return next();},
+    "AddUser":function(req, res , next){
+        console.log(req.params);
+        res.send(req.params);
+        return next();
+    },
     //删除指定用户
     "deleteUser":function(req, res , next){
         return next();

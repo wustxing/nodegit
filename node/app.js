@@ -1,6 +1,5 @@
 var  restify=require("restify");
-var http = require('http');
-var user=require("./routes/user");
+var user=require("./models/user");
 var ip_addr = '127.0.0.1';
 var port    =  '8080';
 

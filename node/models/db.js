@@ -12,9 +12,9 @@ var pool = mysql.createPool({
     database: 'test',
     port: 3306
 });
-function db(){};
 
-db.query=function(sql,callback){
+
+var db=function(sql,callback){
     pool.getConnection(function(err,conn){
         if(err){
             callback(err,null,null);
@@ -28,17 +28,7 @@ db.query=function(sql,callback){
         }
     });
 };
-db.save=function(sql,callback){
 
-};
-
-db.del=function(sql,callback){
-
-};
-
-db.update=function(sql,callback){
-
-};
 module.exports=db;
 
 //3，在js类使用如下

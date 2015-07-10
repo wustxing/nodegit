@@ -1,5 +1,5 @@
 var  restify=require("restify");
-var user=require("./routes/user");
+var user=require("./models/user");
 var ip_addr = '127.0.0.1';
 var port    =  '8080';
 
@@ -13,6 +13,7 @@ server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
 server.use(restify.bodyParser());
 server.use(restify.CORS());
+server.use(restify.acceptParser(server.acceptable));
 
 var PATH = '/getUser';
 server.get({path : PATH , version : '0.0.1'} , user.findAllUsers);

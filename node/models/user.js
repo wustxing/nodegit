@@ -1,5 +1,5 @@
 //这里写user的方法
-var db=require("db");
+var db=require("./db");
 
 function User(user) {
     this.name = user.name;
@@ -9,14 +9,18 @@ function User(user) {
 module.exports = User;
 
 User.prototype.save=function(callback){
-    var sql="select * from test";
-    db(sql,function(err,rows,fields){
-        console.log(rows);
-    });
+
 };
 
 User.getAll=function(callback){
-
+    var sql="select * from tk_admin_user";
+    db(sql,function(err,rows,fields){
+        if (err) {
+            return callback(err);//错误，返回 err 信息
+        }
+        //console.log(rows);
+        callback(null,rows);
+    });
 };
 
 User.getUserById=function(id,callback){

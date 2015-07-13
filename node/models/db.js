@@ -8,8 +8,8 @@ var mysql=require("mysql");
 var pool = mysql.createPool({
     host     : 'localhost',
     user     : 'root',
-    password : '000000',
-    database: 'test',
+    password : '',
+    database: 'qds164149624_db',
     port: 3306
 });
 

@@ -1,5 +1,6 @@
 var  restify=require("restify");
-var user=require("./models/user");
+//var user=require("./models/user");
+var routes=require("./routes/index.js");
 var ip_addr = '127.0.0.1';
 var port    =  '8080';
 
@@ -15,11 +16,12 @@ server.use(restify.bodyParser());
 server.use(restify.CORS());
 server.use(restify.acceptParser(server.acceptable));
 
-var PATH = '/getUser';
-server.get({path : PATH , version : '0.0.1'} , user.findAllUsers);
-server.get({path : PATH +'/:userId' , version : '0.0.1'} , user.findUser);
-server.post({path : PATH , version: '0.0.1'} ,user.AddUser);
-server.del({path : PATH +'/:userId' , version: '0.0.1'} ,user.deleteUser);
+//var PATH = '/getUser';
+//server.get({path : PATH , version : '0.0.1'} , user.findAllUsers);
+//server.get({path : PATH +'/:userId' , version : '0.0.1'} , user.findUser);
+//server.post({path : PATH , version: '0.0.1'} ,user.AddUser);
+//server.del({path : PATH +'/:userId' , version: '0.0.1'} ,user.deleteUser);
+routes(server);
 
 server.listen(port ,ip_addr, function(){
     console.log('%s listening at %s ', server.name , server.url);

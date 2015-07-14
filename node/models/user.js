@@ -1,4 +1,4 @@
-//ÕâÀïÐ´userµÄ·½·¨
+//ï¿½ï¿½ï¿½ï¿½Ð´userï¿½Ä·ï¿½ï¿½ï¿½
 var db=require("./db");
 
 function User(user) {
@@ -16,7 +16,7 @@ User.getAll=function(callback){
     var sql="select * from tk_admin_user";
     db(sql,function(err,rows,fields){
         if (err) {
-            return callback(err);//´íÎó£¬·µ»Ø err ÐÅÏ¢
+            return callback(err);//å›žè°ƒ
         }
         //console.log(rows);
         callback(null,rows);
@@ -37,7 +37,7 @@ User.update=function(){
 
 
 //var  user={
-//    //²éÕÒËùÓÐÓÃ»§
+//    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
 //    "findAllUsers":function(req, res , next){
 //
 //        pool.getConnection(function(err,conn){
@@ -57,7 +57,7 @@ User.update=function(){
 //
 //
 //    },
-//    //¸ù¾Ýid²éÕÒÖ¸¶¨ÓÃ»§
+//    //ï¿½ï¿½ï¿½ï¿½idï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ã»ï¿½
 //    "findUser":function(req, res , next){
 //        console.log(req.params);
 //        var sqlstr1="select * from t_users where UserId="+req.params.userId;
@@ -70,13 +70,13 @@ User.update=function(){
 //            });
 //        });
 //    },
-//    //Ìí¼ÓÓÃ»§
+//    //ï¿½ï¿½ï¿½ï¿½Ã»ï¿½
 //    "AddUser":function(req, res , next){
 //        console.log(req.params);
 //        res.send(req.params);
 //        return next();
 //    },
-//    //É¾³ýÖ¸¶¨ÓÃ»§
+//    //É¾ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ã»ï¿½
 //    "deleteUser":function(req, res , next){
 //        return next();
 //    },

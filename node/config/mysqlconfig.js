@@ -11,6 +11,6 @@ module.exports={
     host     : 'localhost',
     user     : 'root',
     password : '000000',
-    database: 'test',
+    database: 'qds164149624_db',
     port: 3306
 }

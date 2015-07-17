@@ -1,5 +1,4 @@
-//����дuser�ķ���
-var db=require("./db");
+var db=require("./db/db");
 
 function User(user) {
     this.name = user.name;

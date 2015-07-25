@@ -1,5 +1,5 @@
 var mysql       = require('mysql');
-var mysqlConfig = require('../config/mysqlconfig.js');
+var mysqlConfig = require('../../config/mysqlconfig.js');
 
 var env = process.env.NODE_ENV || 'development';
 if(mysqlConfig[env]) {

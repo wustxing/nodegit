@@ -3,8 +3,17 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <title>Document</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+           $("#btnopen").on("click",function(){
+               window.open("http://www.baidu.com", 'newwindow', 'height=100, width=400, top=300, left=300, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no');
+           });
+        });
+    </script>
 </head>
 <body>
+<input type="button" id="btnopen" value="点击">
 <div>
     简介与思路整理
     https://cnodejs.org/topic/551200e6d792542a29789a43

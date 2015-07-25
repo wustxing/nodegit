@@ -13,7 +13,6 @@ var pool = mysql.createPool({
     port: 3306
 });
 
-
 var db=function(sql,callback){
     pool.getConnection(function(err,conn){
         if(err){
@@ -31,9 +30,3 @@ var db=function(sql,callback){
 
 module.exports=db;
 
-//3����js��ʹ������
-//var query=require("./lib/mysql.js");
-//
-//query("select 1 from 1",function(err,vals,fields){
-//    //do something
-//});

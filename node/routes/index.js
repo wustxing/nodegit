@@ -1,4 +1,4 @@
-//这里专注于路由
+
 var User=require("../models/user.js");
 
 module.exports=function(server){

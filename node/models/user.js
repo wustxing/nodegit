@@ -1,4 +1,3 @@
-//����дuser�ķ���
 var db=require("./db");
 
 function User(user) {

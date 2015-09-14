@@ -8,16 +8,18 @@ var mysql=require("mysql");
 var pool = mysql.createPool({
     host     : 'localhost',
     user     : 'root',
-    password : '000000',
-    database: 'qds164149624_db',
+    password : '',
+    database: 'lottery',
     port: 3306
 });
 
 var db=function(sql,callback){
+
     pool.getConnection(function(err,conn){
         if(err){
             callback(err,null,null);
         }else{
+            console.log(sql);
             conn.query(sql,function(qerr,vals,fields){
                 //
                 conn.release();

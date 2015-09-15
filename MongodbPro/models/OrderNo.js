@@ -9,7 +9,8 @@ var db = require('./db.js');
 var Schema=db.mongoose.Schema;
 // define schema
 var Test1Schema = new Schema({
-    orderNo : String
+    //orderNo : String
+    orderNo : { type:Number }
 });
 //var Test1Model= db.mongoose.model('test1', Test1Schema);
 
@@ -39,7 +40,10 @@ exports.findOneOrderNo=function(num,orderNo,callback){
                 callback(null,result);
             }
             else {
-                var query = TestModel[num].find().limit(1).skip(orderNo);
+                //var query = TestModel[num].find().limit(1).skip(orderNo);
+                var query = TestModel[num].find().or([{orderNo: {$lt: orderNo}},{orderNo: {$gt: orderNo}}]).limit(1);
+                //$ne不等于3，$gt大于10 $lt小于 $or或
+               // var query= TestModel[num].find({orderNo: {$lt: 3}, orderNo: {$gt: 10} });
                 query.exec(function (err, list) {
                     if (err) {
                         callback(err);
@@ -62,7 +66,6 @@ exports.findCount=function(num,callback){
        }
         else
        {
-
            callback(null,result);
        }
     });

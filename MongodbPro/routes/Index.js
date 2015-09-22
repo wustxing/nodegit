@@ -3,17 +3,26 @@
  */
 var model = require('../models/OrderNo.js');
 var util=require('../lib/Util.js');
-var countModel=6;//取得模块数
+var countModel=5;//取得模块数
 module.exports=function(server){
     server.get('/', function (req, res) {
-        var num=Math.round(Math.random()*(countModel-1)+1)-1;
+        //var num=Math.round(Math.random()*(countModel-1)+1)-1;//减一以后就是0到4
+        var num=0;
         GetOrderNo(num,function (err, result) {
             if (err) {
                 res.send({err: "1"});
             }
             else {
                 //console.log(result);
-                var opt=num.toString()+result[0].orderNo.toString();
+                var  rst="";
+                if(result[0].orderNo.length<6)
+                {
+                    for(var i=0;i<6-result[0].orderNo.length;i++)
+                    {
+                        rst+="0";
+                    }
+                }
+                var opt=num.toString()+rst.toString()+result[0].orderNo.toString();
                 res.send({orderNo:opt});
             }
         });
@@ -41,18 +50,18 @@ function GetOrderNo(num,callback)
                 if(resultOrder.length>0)
                 {
                     console.log(resultOrder[0].orderNo);
-                    callback(null,resultOrder[0].orderNo);
+                    //callback(null,resultOrder[0].orderNo);
                     //删除
-                    //model.delModel(num,resultOrder[0].orderNo,function(err,rs){
-                    //    if(err)
-                    //    {
-                    //        callback(err,null);
-                    //    }
-                    //    else
-                    //    {
-                    //        callback(null,resultOrder);
-                    //    }
-                    //});
+                    model.delModel(num,resultOrder[0].orderNo,function(err,rs){
+                        if(err)
+                        {
+                            callback(err,null);
+                        }
+                        else
+                        {
+                            callback(null,resultOrder);
+                        }
+                    });
 
                 }
                 else
@@ -61,9 +70,7 @@ function GetOrderNo(num,callback)
                     //GetOrderNo(callback);
                     callback(null,{err:"1"});
                 }
-
                 //model.delModel()
-
             }
 
         });

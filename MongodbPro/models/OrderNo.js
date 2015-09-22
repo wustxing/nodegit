@@ -16,7 +16,7 @@ var Test1Schema = new Schema({
 
 var TestModel={};
 
-for(var i=0;i<6;i++)
+for(var i=0;i<1;i++)
 {
     var test='test'+(i+1);
     TestModel[i]=db.mongoose.model(test, Test1Schema);
@@ -27,9 +27,6 @@ for(var i=0;i<6;i++)
 
 exports.findOneOrderNo=function(num,orderNo,callback){
     var criteria = {orderNo :orderNo}; // 查询条件
-    //var fields   = {orderNo : 1, _id : 1}; // 待返回的字段
-    //var options  = {};
-    //console.log(criteria);
     TestModel[num].find(criteria, function(error, result){
         if(error) {
             console.log(error);
@@ -52,13 +49,10 @@ exports.findOneOrderNo=function(num,orderNo,callback){
                     callback(null,list);
                 });
             }
-
-            //callback(null,result);
         }
     });
 }
 exports.findCount=function(num,callback){
-    console.log(num);
     TestModel[num].count(function(err,result){
        if(err)
        {

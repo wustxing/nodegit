@@ -3,34 +3,82 @@
  */
 var model = require('../models/OrderNo.js');
 var util=require('../lib/Util.js');
-var countModel=6;//取得模块数
+var countModel=5;//取得模块数
 module.exports=function(server){
     server.get('/', function (req, res) {
-
-        util.randomOrderNo(countModel,function(err,result) {
+        //var num=Math.round(Math.random()*(countModel-1)+1)-1;//减一以后就是0到4
+        var num=0;
+        GetOrderNo(num,function (err, result) {
             if (err) {
                 res.send({err: "1"});
-                return;
             }
-            var num=result-1;
-            GetOrderNo(num,function (err, result) {
-                if (err) {
-                    res.send({err: "1"});
+            else {
+                //console.log(result);
+                var  rst="";
+                if(result[0].orderNo.length<6)
+                {
+                    for(var i=0;i<6-result[0].orderNo.length;i++)
+                    {
+                        rst+="0";
+                    }
                 }
-                else {
-                    //console.log(result);
-                    var opt=num.toString()+result[0].orderNo.toString();
-                    res.send({orderNo:opt});
-                }
-            });
+                var opt=num.toString()+rst.toString()+result[0].orderNo.toString();
+                res.send({orderNo:opt});
+            }
         });
-
     });
 
 }
 
 function GetOrderNo(num,callback)
 {
+    model.findCount(num,function (err, docs) {
+        if (err)
+        {
+            console.log(err);
+            return next(err);
+        }
+        //获取数量，然后生成一个在这个数量范围内的随机数
+        var randomOrder=Math.round(Math.random()*(docs-1)+1);
+        model.findOneOrderNo(num,randomOrder, function (err, resultOrder) {
+            if(err)
+            {
+                callback(err,null);
+            }
+            else
+            {
+                if(resultOrder.length>0)
+                {
+                    console.log(resultOrder[0].orderNo);
+                    //callback(null,resultOrder[0].orderNo);
+                    //删除
+                    model.delModel(num,resultOrder[0].orderNo,function(err,rs){
+                        if(err)
+                        {
+                            callback(err,null);
+                        }
+                        else
+                        {
+                            callback(null,resultOrder);
+                        }
+                    });
+
+                }
+                else
+                {
+                    console.log("ddd");
+                    //GetOrderNo(callback);
+                    callback(null,{err:"1"});
+                }
+                //model.delModel()
+            }
+
+        });
+
+    });
+}
+
+function GetOrderNoTest(num,callback){
     console.log(num);
     model.findCount(num,function (err, docs) {
         if (err)
@@ -87,3 +135,6 @@ function GetOrderNo(num,callback)
 
     });
 }
+
+
+

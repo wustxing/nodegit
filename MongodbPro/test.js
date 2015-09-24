@@ -10,11 +10,14 @@ var Schema=db.mongoose.Schema;
 var Test1Schema = new Schema({
     orderNo : String
 });
-var Test1Model= db.mongoose.model('test6', Test1Schema);
+var Test2Schema = new Schema({
+    orderNo : { type:Number }
+});
+var Test1Model= db.mongoose.model('test8', Test2Schema);
 
 var t1=new Date();
 
-Test1Model.find({orderNo:"00000000000"}, function(error, result){
+Test1Model.find({orderNo:00000000000}, function(error, result){
     if(error) {
         console.log(error);
         callback(error,null);
@@ -25,9 +28,25 @@ Test1Model.find({orderNo:"00000000000"}, function(error, result){
 
         }
         else {
-            var query = Test1Model.find().limit(1).skip(0000005233542);
+           // var query = Test1Model.find().limit(1).skip(0000005233542);
+            //$ne不等于3，$gt大于10 $lt小于 $or或
+            var query = Test1Model.find().or([{orderNo: {$lt: 1}},{orderNo: {$gt: 1}}]).limit(1);//15113毫秒，没加索引
+
+            //Test1Model.find({ orderNo: {$lt: 10} },function(err,result){
+            //    if (err) {
+            //        console.log(err);
+            //        return;
+            //    }
+            //    var t2 = new Date();
+            //    console.log(result);
+            //    console.log(t2 - t1);
+            //});//15220
+
+            //var query = Test1Model.find({orderNo:{$lt:1}}).limit(1);//7533
+            var query = Test1Model.find().or([{orderNo: {$lt: 1}},{orderNo: {$gt: 1}}]).limit(1);
             query.exec(function (err, list) {
                 if (err) {
+                    console.log(err);
                     callback(err);
                 }
                 var t2 = new Date();

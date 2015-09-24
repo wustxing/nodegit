@@ -33,4 +33,9 @@ exports.randomOrderNo=function(entNum,callback){
     callback(null,t);
 }
 
+exports.randomNum=function(entNum,callback){
+    var randomResult=Math.round(Math.random()*(entNum-1)+1);
+    callback(null,randomResult);
+}
+
 

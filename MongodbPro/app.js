@@ -2,10 +2,10 @@
  * Created by Administrator on 2015/9/13.
  */
 var  restify=require("restify");
-//var user=require("./models/user");
+var settings=require("./settings.js");
 var routes=require("./routes/Index.js");
-var ip_addr = '127.0.0.1';
-var port    =  '8080';
+var ip_addr = settings.httpServerIp;
+var port    = settings.httpServerPort;
 
 var server = restify.createServer({
     name : "testapp"

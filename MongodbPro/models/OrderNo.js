@@ -18,7 +18,7 @@ var TestModel={};
 
 for(var i=0;i<1;i++)
 {
-    var test='test'+(i+1);
+    var test='test'+(i+2);
     TestModel[i]=db.mongoose.model(test, Test1Schema);
 }
 

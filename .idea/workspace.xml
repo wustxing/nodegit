@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f7aa079-e41a-41cd-a733-ab03468e299d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IPMail/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MongodbPro/routes/Index.js" afterPath="$PROJECT_DIR$/MongodbPro/routes/Index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MongodbPro/models/OrderNo.js" afterPath="$PROJECT_DIR$/MongodbPro/models/OrderNo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MongodbPro/app.js" afterPath="$PROJECT_DIR$/MongodbPro/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MongodbPro/models/db.js" afterPath="$PROJECT_DIR$/MongodbPro/models/db.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/nodegit.iml" afterPath="$PROJECT_DIR$/.idea/nodegit.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MongodbPro/settings.js" afterPath="$PROJECT_DIR$/MongodbPro/settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MongodbPro/test.js" afterPath="$PROJECT_DIR$/MongodbPro/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AngularjsTest/demo1/test1.html" afterPath="$PROJECT_DIR$/AngularjsTest/demo1/test1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IPMail/curl.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IPMail/getNetIp.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IPMail/iptext.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IPMail/mailconfig.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/IPMail/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IPMail/app.js" afterPath="$PROJECT_DIR$/IPMail/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IPMail/sendmail.js" afterPath="$PROJECT_DIR$/IPMail/sendmail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nodegit.iws" />
@@ -33,10 +30,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MongodbPro/routes/Index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5">
+            <state vertical-scroll-proportion="0.0">
               <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
@@ -46,56 +43,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MongodbPro/models/db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IonicTest/myApp/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderNo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MongodbPro/models/OrderNo.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#49#0" expanded="false" />
-                <element signature="e#662#1618#0" expanded="false" />
-                <element signature="e#2815#3002#0" expanded="false" />
-                <element signature="e#3057#3341#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IonicTest/myApp/www/js/controllers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MongodbPro/app.js">
+        <entry file="file://$PROJECT_DIR$/IPMail/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="37" />
+              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mailconfig.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IPMail/mailconfig.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               <folding>
                 <element signature="e#0#49#0" expanded="false" />
               </folding>
@@ -103,22 +67,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MongodbPro/settings.js">
+      <file leaf-file-name="nodemailer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IPMail/node_modules/nodemailer/src/nodemailer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MongodbPro/test.js">
+        <entry file="file://$PROJECT_DIR$/IPMail/test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="47" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="47" />
-              <folding />
+              <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#65#114#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getNetIp.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IPMail/getNetIp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7849829">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="e#50#99#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="iptext.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IPMail/iptext.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#49#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="curl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IPMail/curl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#49#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,17 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node/apptest.js" />
-        <option value="$PROJECT_DIR$/node/app.js" />
-        <option value="$PROJECT_DIR$/node/models/db.js" />
-        <option value="$PROJECT_DIR$/node/config/mysqlconfig.js" />
-        <option value="$PROJECT_DIR$/node/models/user.js" />
-        <option value="$PROJECT_DIR$/node/testwindowsopen.html" />
-        <option value="$PROJECT_DIR$/node/test.html" />
-        <option value="$PROJECT_DIR$/node/test/apptest.js" />
-        <option value="$PROJECT_DIR$/node/test/test.html" />
-        <option value="$PROJECT_DIR$/node/routes/index.js" />
-        <option value="$PROJECT_DIR$/node/models/Admin_User.js" />
         <option value="$PROJECT_DIR$/node/models/Aricle.js" />
         <option value="$PROJECT_DIR$/node/models/sql/SqlConfig.js" />
         <option value="$PROJECT_DIR$/node/models/db/db.js" />
@@ -194,6 +186,17 @@
         <option value="$PROJECT_DIR$/MongodbPro/app.js" />
         <option value="$PROJECT_DIR$/MongodbPro/settings.js" />
         <option value="$PROJECT_DIR$/MongodbPro/models/db.js" />
+        <option value="$PROJECT_DIR$/IPMail/curl.js" />
+        <option value="$PROJECT_DIR$/IPMail/getNetIp.js" />
+        <option value="$PROJECT_DIR$/IPMail/iptext.js" />
+        <option value="$PROJECT_DIR$/IPMail/config.js" />
+        <option value="$PROJECT_DIR$/IPMail/sendMail.js" />
+        <option value="$PROJECT_DIR$/IPMail/mailconfig.js" />
+        <option value="$PROJECT_DIR$/IPMail/node_modules/nodemailer/package.json" />
+        <option value="$PROJECT_DIR$/IPMail/sendmail.js" />
+        <option value="$PROJECT_DIR$/IPMail/app.js" />
+        <option value="$PROJECT_DIR$/IPMail/bb.txt" />
+        <option value="$PROJECT_DIR$/IPMail/test.js" />
       </list>
     </option>
   </component>
@@ -205,10 +208,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1448" />
-    <option name="height" value="864" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -249,7 +252,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodegit1" />
+              <option name="myItemId" value="nodegit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -259,11 +262,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodegit1" />
+              <option name="myItemId" value="nodegit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MongodbPro" />
+              <option name="myItemId" value="wx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -273,15 +276,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodegit1" />
+              <option name="myItemId" value="nodegit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MongodbPro" />
+              <option name="myItemId" value="wx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat-api" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,15 +298,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodegit1" />
+              <option name="myItemId" value="nodegit" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="MongodbPro" />
+              <option name="myItemId" value="wx" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="node_modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="wechat-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -352,20 +367,20 @@
       <recent name="F:\ftp\nodegit\nodegit\node\models" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js (1)">
-    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/MongodbPro/node_modules/mongoose/examples/express/connection-sharing">
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="false" name="test.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/IPMail">
       <method />
     </configuration>
-    <configuration default="false" name="app.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/MongodbPro">
+    <configuration default="false" name="getNetIp.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="getNetIp.js" working-dir="$PROJECT_DIR$/IPMail">
       <method />
     </configuration>
-    <configuration default="false" name="Util.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="Util.js" working-dir="$PROJECT_DIR$/MongodbPro/lib">
+    <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/IPMail">
       <method />
     </configuration>
-    <configuration default="false" name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/MongodbPro">
+    <configuration default="false" name="iptext.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="iptext.js" working-dir="$PROJECT_DIR$/IPMail">
       <method />
     </configuration>
-    <configuration default="false" name="db.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="db.js" working-dir="$PROJECT_DIR$/MongodbPro/models">
+    <configuration default="false" name="sendmail.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="sendmail.js" working-dir="$PROJECT_DIR$/IPMail">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -407,19 +422,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.app.js (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.Util.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.db.js" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.test.js (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.getNetIp.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.iptext.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.sendmail.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.db.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.test.js" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.Util.js" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.test.js (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.sendmail.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.iptext.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.getNetIp.js" />
       </list>
     </recent_temporary>
   </component>
@@ -446,17 +461,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1448" height="864" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17406625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16294643" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32792208" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20813008" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37377962" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3203252" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21338913" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21266234" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2813008" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -464,7 +480,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284553" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -504,81 +519,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MongodbPro/models/OrderNo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-            <element signature="e#662#1618#0" expanded="false" />
-            <element signature="e#2815#3002#0" expanded="false" />
-            <element signature="e#3057#3341#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wx/node_modules/wechat-api/node_modules/urllib/node_modules/native-or-bluebird/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MongodbPro/routes/Index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-            <element signature="e#1042#2382#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MongodbPro/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MongodbPro/lib/Util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MongodbPro/models/OrderNo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="2" selection-start-line="82" selection-start-column="2" selection-end-line="82" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#49#0" expanded="false" />
-            <element signature="e#662#1618#0" expanded="false" />
-            <element signature="e#2815#3002#0" expanded="false" />
-            <element signature="e#3057#3341#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MongodbPro/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="63" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MongodbPro/models/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MongodbPro/routes/Index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -831,22 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IonicTest/myApp/www/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IonicTest/myApp/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MongodbPro/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -855,18 +779,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IPMail/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MongodbPro/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="37" />
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="36" />
           <folding>
             <element signature="e#0#49#0" expanded="false" />
           </folding>
@@ -876,7 +792,7 @@
     <entry file="file://$PROJECT_DIR$/MongodbPro/settings.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -904,11 +820,114 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MongodbPro/routes/Index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
             <element signature="e#0#49#0" expanded="false" />
             <element signature="e#1042#2382#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/curl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wx/node_modules/wechat-api/lib/api_ip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3116883">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/node_modules/nodemailer/src/nodemailer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/node_modules/nodemailer/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32786885">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/bb.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="14" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#65#114#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/sendmail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6709511">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/mailconfig.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/iptext.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IPMail/getNetIp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7849829">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#99#0" expanded="false" />
           </folding>
         </state>
       </provider>

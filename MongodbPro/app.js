@@ -8,9 +8,8 @@ var ip_addr = settings.httpServerIp;
 var port    = settings.httpServerPort;
 
 var server = restify.createServer({
-    name : "testapp"
+    name : settings.httpServerName
 });
-
 server.use(restify.acceptParser(server.acceptable));
 server.use(restify.queryParser());
 server.use(restify.bodyParser());

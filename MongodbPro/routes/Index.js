@@ -15,14 +15,16 @@ module.exports=function(server){
             else {
                 //console.log(result);
                 var  rst="";
-                if(result[0].orderNo.length<6)
+                var count=result[0].orderNo.toString().length;
+                if(count<8)
                 {
-                    for(var i=0;i<6-result[0].orderNo.length;i++)
+                    for(var i=0;i<8-count;i++)
                     {
                         rst+="0";
                     }
                 }
-                var opt=num.toString()+rst.toString()+result[0].orderNo.toString();
+
+                var opt="000"+(num+1).toString()+rst.toString()+result[0].orderNo.toString();
                 res.send({orderNo:opt});
             }
         });
@@ -39,8 +41,10 @@ function GetOrderNo(num,callback)
             return next(err);
         }
         //获取数量，然后生成一个在这个数量范围内的随机数
+        console.log("数据库总数量："+docs.toString());
         var randomOrder=Math.round(Math.random()*(docs-1)+1);
-        model.findOneOrderNo(num,randomOrder, function (err, resultOrder) {
+        console.log("根据总数量生成的随机数："+randomOrder.toString());
+        model.findOrderNo(num,randomOrder, function (err, resultOrder) {
             if(err)
             {
                 callback(err,null);
@@ -78,63 +82,6 @@ function GetOrderNo(num,callback)
     });
 }
 
-function GetOrderNoTest(num,callback){
-    console.log(num);
-    model.findCount(num,function (err, docs) {
-        if (err)
-        {
-            console.log(err);
-            return next(err);
-        }
-        //获取数量，然后生成一个在这个数量范围内的随机数
-        //var randomOrder=Math.round(Math.random()*(docs-1)+1);
-        //console.log(docs);
-        util.randomOrderNo(docs,function(err,result) {
-            if (err) {
-                callback(err,null);
-            }
-            else {
-                var orderNo = result;
-                model.findOneOrderNo(num,orderNo, function (err, resultOrder) {
-                    if(err)
-                    {
-                        callback(err,null);
-                    }
-                    else
-                    {
-                        if(resultOrder.length>0)
-                        {
-                            console.log(resultOrder[0].orderNo);
-                            model.delModel(num,resultOrder[0].orderNo,function(err,rs){
-                                if(err)
-                                {
-                                    callback(err,null);
-                                }
-                                else
-                                {
-                                    callback(null,resultOrder);
-                                }
-                            });
-
-                        }
-                        else
-                        {
-                            console.log("ddd");
-                            //GetOrderNo(callback);
-                            callback(null,{err:"1"});
-                        }
-
-                        //model.delModel()
-
-                    }
-
-                });
-
-            }
-        });
-
-    });
-}
 
 
 

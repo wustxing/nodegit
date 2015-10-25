@@ -1,0 +1,134 @@
+NodeClub listening on port 4000
+God bless love....
+You can debug your app with http://localhost:4000
+
+
+
+Started 2015-10-25T13:01:58.575Z GET / ::1
+Completed 500 [32m(57ms)[39m
+
+
+Started 2015-10-25T13:01:58.755Z GET /favicon.ico ::1
+Completed 500 [32m(18ms)[39m
+
+
+Started 2015-10-25T13:01:58.774Z GET /favicon.ico ::1
+Completed 500 [32m(51ms)[39m
+NodeClub listening on port 4000
+God bless love....
+You can debug your app with http://localhost:4000
+
+
+
+Started 2015-10-25T13:15:45.386Z GET / ::1
+NodeClub listening on port 4000
+God bless love....
+You can debug your app with http://localhost:4000
+
+
+
+Started 2015-10-25T13:17:48.338Z GET / ::1
+  Render view index [32m(24ms)[39m
+Completed 200 [32m(235ms)[39m
+
+
+Started 2015-10-25T13:17:48.822Z GET /www.ypintao.com ::1
+
+
+Started 2015-10-25T13:17:48.843Z GET /wustxing ::1
+
+
+Started 2015-10-25T13:17:48.950Z GET /www.ypintao.com ::1
+Completed 404 [32m(488ms)[39m
+Completed 404 [32m(541ms)[39m
+Completed 404 [32m(437ms)[39m
+NodeClub listening on port 4000
+God bless love....
+You can debug your app with http://localhost:4000
+
+
+
+Started 2015-10-25T13:39:04.205Z GET / ::1
+  Render view index [32m(29ms)[39m
+Completed 200 [32m(80ms)[39m
+
+
+Started 2015-10-25T13:39:04.509Z GET /wustxing ::1
+Completed 404 [32m(6ms)[39m
+
+
+Started 2015-10-25T13:39:04.690Z GET /wustxing ::1
+Completed 404 [32m(5ms)[39m
+
+
+Started 2015-10-25T13:41:38.990Z GET /signin ::1
+Completed 404 [32m(3ms)[39m
+
+
+Started 2015-10-25T13:43:22.890Z GET /getstart ::1
+Completed 404 [32m(3ms)[39m
+NodeClub listening on port 4000
+God bless love....
+You can debug your app with http://localhost:4000
+
+
+
+Started 2015-10-25T13:44:18.988Z GET / ::1
+  Render view index [32m(26ms)[39m
+Completed 200 [32m(112ms)[39m
+
+
+Started 2015-10-25T13:44:19.336Z GET /wustxing ::1
+Completed 404 [32m(12ms)[39m
+
+
+Started 2015-10-25T13:44:21.075Z GET /getstart ::1
+  Render view static/getstart [32m(110ms)[39m
+Completed 200 [32m(117ms)[39m
+
+
+Started 2015-10-25T13:44:21.309Z GET /wustxing ::1
+Completed 404 [32m(4ms)[39m
+
+
+Started 2015-10-25T13:44:21.478Z GET /wustxing ::1
+Completed 404 [32m(4ms)[39m
+
+
+Started 2015-10-25T13:44:23.027Z GET / ::1
+  Render view index [32m(6ms)[39m
+Completed 304 [32m(49ms)[39m
+
+
+Started 2015-10-25T13:44:23.167Z GET /wustxing ::1
+Completed 404 [32m(8ms)[39m
+
+
+Started 2015-10-25T13:44:23.280Z GET /wustxing ::1
+Completed 404 [32m(2ms)[39m
+
+
+Started 2015-10-25T13:44:24.378Z GET /api ::1
+  Render view static/api [32m(13ms)[39m
+Completed 200 [32m(15ms)[39m
+
+
+Started 2015-10-25T13:44:24.493Z GET /wustxing ::1
+Completed 404 [32m(6ms)[39m
+
+
+Started 2015-10-25T13:44:24.641Z GET /wustxing ::1
+Completed 404 [32m(23ms)[39m
+
+
+Started 2015-10-25T13:44:25.436Z GET /about ::1
+  Render view static/about [32m(6ms)[39m
+Completed 200 [32m(10ms)[39m
+
+
+Started 2015-10-25T13:44:25.534Z GET /wustxing ::1
+Completed 404 [32m(3ms)[39m
+
+
+Started 2015-10-25T13:44:25.688Z GET /wustxing ::1
+Completed 404 [32m(5ms)[39m

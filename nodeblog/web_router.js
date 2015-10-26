@@ -9,6 +9,9 @@ var router = express.Router();
 
 // home page
 router.get('/', site.index);
+//sitemap
+router.get('/sitemap.xml',site.sitemap);
+
 
 // static
 router.get('/about', staticController.about);

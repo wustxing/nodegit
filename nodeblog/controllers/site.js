@@ -10,6 +10,8 @@ var cache        = require('../common/cache');
 var xmlbuilder   = require('xmlbuilder');
 var renderHelper = require('../common/render_helper');
 var _            = require('lodash');
+
+
 exports.index = function (req, res, next) {
     var page = parseInt(req.query.page, 10) || 1;
     page = page > 0 ? page : 1;
@@ -98,4 +100,38 @@ exports.index = function (req, res, next) {
                 pageTitle: tabName && (tabName + '版块'),
             });
         });
+};
+
+exports.sitemap = function(req,res,next){
+    var  urlset = xmlbuilder.create('urlset',{version:'1.0',encoding: 'UTF-8'});
+    urlset.att('xmlns', 'http://www.sitemaps.org/schemas/sitemap/0.9');
+
+    var ep = new eventproxy();
+    ep.fail(next);
+
+    ep.all('sitemap', function (sitemap){
+        res.type('xml');
+        res.send(sitemap);
+    });
+
+    cache.get('sitemap', ep.done(function (sitemapData) {
+        if (sitemapData) {
+            ep.emit('sitemap',sitemapData);
+        }else{
+            Topic.getLimit5w(function (err, topics) {
+               if (err) {
+                   return next(err);
+               }
+                topics.forEach(function (topic) {
+                    urlset.ele('url').ele('loc','http://cnodejs.org/topic/' + topic._id);
+                });
+
+                var sitemapData=urlset.end();
+
+                //缓存一天
+                cache.set('sitemap', sitemapData, 3600 * 24);
+                ep.emit('sitemap', sitemapData);
+            });
+        }
+    }));
 };

@@ -55,11 +55,11 @@ var config = {
     list_topic_count: 20,
     // 邮箱配置
     mail_opts: {
-        host: 'smtp.126.com',
-        port: 25,
+        name: 'xiongxing',
+        service: 'QQ',
         auth: {
-            user: 'club@126.com',
-            pass: 'club'
+            user: '372582632@qq.com',
+            pass: 'xiongxing123'
         }
     },
     // github 登陆的配置
